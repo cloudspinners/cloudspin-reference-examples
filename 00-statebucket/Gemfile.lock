@@ -1,3 +1,18 @@
+PATH
+  remote: /Users/kmorris/projects/spin/cloudspin-stack-rake
+  specs:
+    cloudspin-stack-rake (0.1.14)
+      cloudspin-stack
+      inspec
+      rake
+
+PATH
+  remote: /Users/kmorris/projects/spin/cloudspin-stack
+  specs:
+    cloudspin-stack (0.1.21)
+      ruby-terraform
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -16,13 +31,6 @@ GEM
     azure_mgmt_resources (0.17.1)
       ms_rest_azure (~> 0.11.0)
     builder (3.2.3)
-    cloudspin-stack (0.1.21)
-      ruby-terraform
-      thor
-    cloudspin-stack-rake (0.1.14)
-      cloudspin-stack
-      inspec
-      rake
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
     declarative (0.0.10)
@@ -203,7 +211,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cloudspin-stack-rake
+  cloudspin-stack!
+  cloudspin-stack-rake!
 
 BUNDLED WITH
    1.16.4

@@ -1,0 +1,20 @@
+require 'rake/clean'
+require 'cloudspin/stack/rake'
+require 'fileutils'
+require 'open-uri'
+require 'tempfile'
+require 'zip'
+
+CLEAN.include('work')
+CLEAN.include('.cloudspin/definitions')
+
+include Cloudspin::Stack::Rake
+
+StackTask.new(
+  role: 'statebucket',
+  configuration_files: [
+    './stack-statebucket-defaults.yaml',
+    './stack-statebucket-local.yaml'
+  ],
+  definition_location: 'https://github.com/cloudspinners/spin-stack-s3bucket/archive/master.zip'
+)
