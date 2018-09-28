@@ -1,0 +1,12 @@
+---
+instance:
+  group: YOURNAME_sandbox
+
+resources:
+  # For bootstrap:
+  aws_profile: YOUR_BOOTSTRAP_CREDENTIALS_PROFILE
+
+  # After bootstrap:
+  # aws_profile: YOUR_UNPRIVEGED_CREDENTIALS_PROFILE
+  # assume_role_profile: YOUR_ASSUME_DELIVERY_ROLE_PROFILE
+  # assume_role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-delivery
