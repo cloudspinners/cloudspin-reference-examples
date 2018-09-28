@@ -1,7 +1,7 @@
 instance:
-  group: root
+  group: local
 
 parameters:
   region: "eu-west-1"
-  environment_name: root
+  environment_name: local
   bucket_base_name: statebucket-cloudspin-examples
