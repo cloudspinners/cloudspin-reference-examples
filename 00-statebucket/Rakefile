@@ -11,7 +11,7 @@ CLEAN.include('.cloudspin/definitions')
 include Cloudspin::Stack::Rake
 
 StackTask.new(
-  role: 'statebucket',
+  stack_name: 'bucket',
   configuration_files: [
     './stack-statebucket-defaults.yaml',
     './stack-statebucket-local.yaml'
