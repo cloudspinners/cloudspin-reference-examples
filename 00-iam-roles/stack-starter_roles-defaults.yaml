@@ -1,0 +1,10 @@
+instance:
+  group: local
+
+terraform_backend:
+  region: eu-west-1
+
+parameters:
+  managed_stack_name: cloudspin_examples
+  region: "eu-west-1"
+  environment_name: local

@@ -1,0 +1,20 @@
+require 'rake/clean'
+require 'cloudspin/stack/rake'
+require 'fileutils'
+require 'open-uri'
+require 'tempfile'
+require 'zip'
+
+CLEAN.include('work')
+CLEAN.include('.cloudspin/definitions')
+
+include Cloudspin::Stack::Rake
+
+StackTask.new(
+  stack_name: 'starter_roles',
+  configuration_files: [
+    './stack-starter_roles-defaults.yaml',
+    './stack-starter_roles-local.yaml'
+  ],
+  definition_location: 'https://github.com/cloudspinners/spin-stack-iam-roles/archive/master.zip'
+)

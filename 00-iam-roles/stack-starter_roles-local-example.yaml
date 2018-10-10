@@ -1,0 +1,19 @@
+---
+instance:
+  group: YOURNAME_sandbox
+
+terraform_backend:
+  bucket: statebucket-cloudspin-examples-XXXXXXXXXXXX
+
+parameters:
+  stack_manager_users:
+    - YOUR_UNPRIVILEGED_IAM_USER_NAME
+
+resources:
+## When bootstrapping, uncomment this line, then comment it again afterwards:
+  aws_profile: YOUR_BOOTSTRAP_PROFILE
+
+## After bootstrapping, uncomment these:
+#   aws_profile: YOUR_UNPRIVILEGED_PROFILE
+#   assume_role_profile: assume-cloudspin_examples-account
+#   assume_role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-account
