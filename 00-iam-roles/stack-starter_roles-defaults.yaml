@@ -3,6 +3,7 @@ instance:
 
 terraform_backend:
   region: eu-west-1
+  encrypt: true
 
 parameters:
   managed_stack_name: cloudspin_examples
