@@ -2,10 +2,10 @@
 
 title 'vpc'
 
-stack_instance_id = attribute('stack_instance_id', description: 'Which stack to test')
+instance_identifier = attribute('instance_identifier', description: 'Which stack to test')
 
 describe aws_vpc_list do
-  its('name') { should include "vpc-#{stack_instance_id}" }
+  its('name') { should include "vpc-#{instance_identifier}" }
 end
 
 describe attribute('region', description: 'aws region') do
