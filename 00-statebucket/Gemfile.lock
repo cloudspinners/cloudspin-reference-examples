@@ -1,15 +1,30 @@
+PATH
+  remote: /Users/kmorris/spin/cloudspin-stack-rake
+  specs:
+    cloudspin-stack-rake (0.1.18)
+      cloudspin-stack
+      inspec
+      rake
+
+PATH
+  remote: /Users/kmorris/spin/cloudspin-stack
+  specs:
+    cloudspin-stack (0.1.24)
+      ruby-terraform
+      thor
+
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    aws-sdk (2.11.162)
-      aws-sdk-resources (= 2.11.162)
-    aws-sdk-core (2.11.162)
+    aws-sdk (2.11.165)
+      aws-sdk-resources (= 2.11.165)
+    aws-sdk-core (2.11.165)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.162)
-      aws-sdk-core (= 2.11.162)
+    aws-sdk-resources (2.11.165)
+      aws-sdk-core (= 2.11.165)
     aws-sigv4 (1.0.3)
     azure_graph_rbac (0.17.0)
       ms_rest_azure (~> 0.11.0)
@@ -18,15 +33,8 @@ GEM
     azure_mgmt_resources (0.17.2)
       ms_rest_azure (~> 0.11.0)
     builder (3.2.3)
-    cloudspin-stack (0.1.24)
-      ruby-terraform
-      thor
-    cloudspin-stack-rake (0.1.16)
-      cloudspin-stack
-      inspec
-      rake
     coderay (1.1.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.3)
     declarative (0.0.10)
     declarative-option (0.1.0)
     diff-lcs (1.3)
@@ -130,7 +138,7 @@ GEM
     os (1.0.0)
     parallel (1.12.1)
     parslet (1.8.2)
-    pry (0.11.3)
+    pry (0.12.0)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (3.0.3)
@@ -211,8 +219,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cloudspin-stack
-  cloudspin-stack-rake
+  cloudspin-stack!
+  cloudspin-stack-rake!
 
 BUNDLED WITH
-   1.16.4
+   1.17.1

@@ -12,9 +12,5 @@ include Cloudspin::Stack::Rake
 
 StackTask.new(
   stack_name: 'bucket',
-  configuration_files: [
-    './stack-statebucket-defaults.yaml',
-    './stack-statebucket-local.yaml'
-  ],
   definition_location: 'https://github.com/cloudspinners/spin-stack-s3bucket/archive/master.zip'
 )
