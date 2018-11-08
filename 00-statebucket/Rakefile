@@ -1,9 +1,5 @@
 require 'rake/clean'
 require 'cloudspin/stack/rake'
-require 'fileutils'
-require 'open-uri'
-require 'tempfile'
-require 'zip'
 
 CLEAN.include('work')
 CLEAN.include('.cloudspin/definitions')
