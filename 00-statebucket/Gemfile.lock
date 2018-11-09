@@ -3,13 +3,13 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    aws-sdk (2.11.166)
-      aws-sdk-resources (= 2.11.166)
-    aws-sdk-core (2.11.166)
+    aws-sdk (2.11.167)
+      aws-sdk-resources (= 2.11.167)
+    aws-sdk-core (2.11.167)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.166)
-      aws-sdk-core (= 2.11.166)
+    aws-sdk-resources (2.11.167)
+      aws-sdk-core (= 2.11.167)
     aws-sigv4 (1.0.3)
     azure_graph_rbac (0.17.0)
       ms_rest_azure (~> 0.11.0)
@@ -18,11 +18,11 @@ GEM
     azure_mgmt_resources (0.17.2)
       ms_rest_azure (~> 0.11.0)
     builder (3.2.3)
-    cloudspin-stack (0.1.27)
+    cloudspin-stack (0.1.29)
       ruby-terraform
       rubyzip
       thor
-    cloudspin-stack-rake (0.1.20)
+    cloudspin-stack-rake (0.1.21)
       cloudspin-stack
       inspec
       rake
@@ -73,7 +73,7 @@ GEM
       domain_name (~> 0.5)
     httpclient (2.8.3)
     inifile (3.0.0)
-    inspec (3.0.25)
+    inspec (3.0.46)
       addressable (~> 2.4)
       faraday (>= 0.9.0)
       faraday_middleware (~> 0.12.2)
