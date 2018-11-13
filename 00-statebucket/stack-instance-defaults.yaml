@@ -1,5 +1,6 @@
 stack:
   name: bucket
+  definition_location: 'https://github.com/cloudspinners/spin-stack-s3bucket/archive/master.zip'
 
 instance:
   group: local

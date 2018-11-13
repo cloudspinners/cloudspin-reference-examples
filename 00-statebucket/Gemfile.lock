@@ -3,13 +3,13 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    aws-sdk (2.11.167)
-      aws-sdk-resources (= 2.11.167)
-    aws-sdk-core (2.11.167)
+    aws-sdk (2.11.169)
+      aws-sdk-resources (= 2.11.169)
+    aws-sdk-core (2.11.169)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.167)
-      aws-sdk-core (= 2.11.167)
+    aws-sdk-resources (2.11.169)
+      aws-sdk-core (= 2.11.169)
     aws-sigv4 (1.0.3)
     azure_graph_rbac (0.17.0)
       ms_rest_azure (~> 0.11.0)
@@ -18,11 +18,11 @@ GEM
     azure_mgmt_resources (0.17.2)
       ms_rest_azure (~> 0.11.0)
     builder (3.2.3)
-    cloudspin-stack (0.1.29)
+    cloudspin-stack (0.1.30)
       ruby-terraform
       rubyzip
       thor
-    cloudspin-stack-rake (0.1.21)
+    cloudspin-stack-rake (0.1.22)
       cloudspin-stack
       inspec
       rake
@@ -106,7 +106,7 @@ GEM
       little-plugger (~> 1.1)
       multi_json (~> 1.10)
     memoist (0.16.0)
-    method_source (0.9.1)
+    method_source (0.9.2)
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
@@ -131,7 +131,7 @@ GEM
     os (1.0.0)
     parallel (1.12.1)
     parslet (1.8.2)
-    pry (0.12.0)
+    pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (3.0.3)
@@ -170,7 +170,7 @@ GEM
     sslshake (1.2.0)
     term-ansicolor (1.7.0)
       tins (~> 1.0)
-    thor (0.20.0)
+    thor (0.20.3)
     timeliness (0.3.8)
     tins (1.19.0)
     tomlrb (1.2.7)
