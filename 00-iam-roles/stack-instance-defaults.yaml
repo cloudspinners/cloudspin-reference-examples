@@ -1,5 +1,6 @@
 stack:
   name: starter_roles
+  definition_location: 'https://github.com/cloudspinners/spin-stack-iam-roles/archive/master.zip'
 
 instance:
   group: local

@@ -6,6 +6,4 @@ CLEAN.include('.cloudspin/definitions')
 
 include Cloudspin::Stack::Rake
 
-StackTask.new(
-  definition_location: 'https://github.com/cloudspinners/spin-stack-iam-roles/archive/master.zip'
-)
+StackTask.new
