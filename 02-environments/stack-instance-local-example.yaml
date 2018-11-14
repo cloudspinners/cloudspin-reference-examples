@@ -1,5 +1,10 @@
 ---
+terraform_backend:
+  bucket: statebucket-cloudspin-examples-XXXXXXXXXXXX
+  profile: YOUR_UNPRIVILEGED_PROFILE
+  assume_role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-manager
+
 resources:
-  aws_profile: your-profile
-  assume_role_profile: profile-for-assuming-role
-  assume_role_arn: arn:aws:iam::xxxxxxxxxxxx:role/role_name
+  aws_profile: YOUR_UNPRIVILEGED_PROFILE
+  assume_role_profile: assume-cloudspin_examples-manager
+  assume_role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-manager

@@ -12,3 +12,11 @@ include Cloudspin::Stack::Rake
     InspecTask.new(stack_instance: stack)
   end
 }
+
+namespace :all do
+  desc 'Create all stacks'
+  task :up => ['sandbox', 'staging'].map { |environment| :"#{environment}:up" }
+
+  desc 'Destroy all stacks'
+  task :down => ['sandbox', 'staging'].map { |environment| :"#{environment}:down" }
+end
