@@ -2,11 +2,38 @@
 instance:
   group: YOURNAME_sandbox
 
+########################################
+## For bootstrap:
 resources:
-  # For bootstrap:
   aws_profile: YOUR_BOOTSTRAP_CREDENTIALS_PROFILE
+########################################
 
-  # After bootstrap:
-  # aws_profile: YOUR_UNPRIVEGED_CREDENTIALS_PROFILE
-  # assume_role_profile: YOUR_ASSUME_DELIVERY_ROLE_PROFILE
-  # assume_role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-delivery
+########################################
+## To migrate:
+# resources:
+#   aws_profile: YOUR_BOOTSTRAP_CREDENTIALS_PROFILE
+
+# terraform_backend:
+#   bucket: YOURNAME_sandbox-XXXXXXXXXXXX
+#   profile: YOUR_BOOTSTRAP_CREDENTIALS_PROFILE
+#   region: eu-west-1
+#   encrypt: true
+#   migrate: true
+########################################
+
+
+########################################
+## After bootstrap, after IAM stack:
+# resources:
+#   aws_profile: YOUR_UNPRIVEGED_CREDENTIALS_PROFILE
+#   assume_role_profile: YOUR_ASSUME_DELIVERY_ROLE_PROFILE
+#   assume_role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-delivery
+#
+# terraform_backend:
+#   bucket: YOURNAME_sandbox-XXXXXXXXXXXX
+#   profile: YOUR_UNPRIVEGED_CREDENTIALS_PROFILE
+#   role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-manager
+#   region: eu-west-1
+#   encrypt: true
+#   # migrate: true
+########################################
