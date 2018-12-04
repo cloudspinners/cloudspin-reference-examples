@@ -3,13 +3,17 @@ instance:
   group: YOURNAME_sandbox
 
 ########################################
-## For bootstrap:
+## For initial bootstrap:
+
 resources:
   aws_profile: YOUR_BOOTSTRAP_CREDENTIALS_PROFILE
+
+## End of initial bootstrap
 ########################################
 
 ########################################
-## To migrate:
+## To migrate state:
+
 # resources:
 #   aws_profile: YOUR_BOOTSTRAP_CREDENTIALS_PROFILE
 
@@ -18,12 +22,14 @@ resources:
 #   profile: YOUR_BOOTSTRAP_CREDENTIALS_PROFILE
 #   region: eu-west-1
 #   encrypt: true
-#   migrate: true
+
+## End of migrating
 ########################################
 
 
 ########################################
-## After bootstrap, after IAM stack:
+## Finishing bootstrap, after IAM stack:
+
 # resources:
 #   aws_profile: YOUR_UNPRIVEGED_CREDENTIALS_PROFILE
 #   assume_role_profile: YOUR_ASSUME_DELIVERY_ROLE_PROFILE
@@ -35,5 +41,6 @@ resources:
 #   role_arn: arn:aws:iam::XXXXXXXXXXXX:role/spin_role-cloudspin_examples-manager
 #   region: eu-west-1
 #   encrypt: true
-#   # migrate: true
+
+## End of finishing bootstrap
 ########################################
